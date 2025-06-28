@@ -9,7 +9,8 @@ from pydub import AudioSegment
 from py_synth_file import synthesize_audio
 from py_trans_file import transcribe_audio
 from py_detectlang_file import detect_language
-
+from dotenv import load_dotenv
+load_dotenv()
 app = Sanic("Backend_Speech_Server")
 app.config.CORS_ORIGINS = os.getenv("CORS_SONIC", 'http://localhost:55756')
 
