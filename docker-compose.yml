@@ -5,7 +5,7 @@ services:
     build:
       context: ./backend/python_back
     env_file:
-      - ./backend/python_back/.env   
+      - ./backend/python_back/.env
     ports:
       - "5000:5000"
 
@@ -13,7 +13,7 @@ services:
     build:
       context: ./frontend/flutter_web_python
     environment:
-      API_URL: http://backend:5000
+      API_URL: http://localhost:5000
     ports:
       - "8080:80"
     depends_on:
