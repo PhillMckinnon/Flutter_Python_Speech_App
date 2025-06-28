@@ -7,7 +7,6 @@ COPY requirements.txt .
 # Install required packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
-    ffprobe \
     git \
     gcc \
     g++ \
