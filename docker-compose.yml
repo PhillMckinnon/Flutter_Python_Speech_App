@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend/python_back
+    env_file:
+      - ./backend/python_back/.env   
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: ./frontend/flutter_web_python
+    environment:
+      API_URL: http://backend:5000
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
