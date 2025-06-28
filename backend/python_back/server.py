@@ -12,7 +12,7 @@ from py_detectlang_file import detect_language
 from dotenv import load_dotenv
 load_dotenv()
 app = Sanic("Backend_Speech_Server")
-app.config.CORS_ORIGINS = os.getenv("CORS_SONIC", 'http://localhost:55756')
+app.config.CORS_ORIGINS = os.getenv("CORS_ORIGIN", 'http://localhost:55756')
 
 app.config.CORS_METHODS = ["POST", "GET", "OPTIONS"]
 app.config.CORS_ALLOW_HEADERS = ["Content-Type", "Authorization"]
