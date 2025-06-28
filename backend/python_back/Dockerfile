@@ -43,6 +43,7 @@ COPY server.py .
 COPY py_detectlang_file.py .
 COPY py_synth_file.py .
 COPY py_trans_file.py .
+COPY test_main_app_tests.py .
 
 # Agree to Coqui TTS terms
 ENV COQUI_TOS_AGREED=1
