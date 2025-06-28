@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Fallback to default if API_URL is not set
-: "${API_URL:=http://localhost:5000/api/transcribe}"
+: "${API_URL:=http://localhost:5000}"
 : "${CORS_ORIGIN:=http://localhost:8080}"
 
 # Write env.js dynamically
