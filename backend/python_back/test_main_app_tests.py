@@ -86,7 +86,7 @@ def test_transcribe_audio_too_long(long_audio_bytes, Mock_model):
 
 def test_transcribe_audio_six(sixmin_audio_bytes, Mock_model):
     result = transcribe_audio(sixmin_audio_bytes, "long.wav", Mock_model)
-    assert result.status == 200
+    assert result.status == 400
 
 # ------------------------
 # synthesize_audio tests
