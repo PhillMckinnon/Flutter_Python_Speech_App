@@ -5,7 +5,7 @@ on:
     branches: [ main, dev ]
   pull_request:
     branches: [ main, dev ]
-
+ 
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -25,6 +25,8 @@ jobs:
         pip install pytest pytest-cov
 
     - name: Run tests and coverage
+      env:
+        PYTHONPATH: /app
       run: |
         python -m pytest --cov --cov-branch --cov-report=xml
 
