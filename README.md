@@ -35,6 +35,7 @@
 
 ### 🔧 Prerequisites
 
+- Git
 - Docker
 - Docker Compose
 
