@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
 
-> A Dockerized web app for transcribing speech to text and synthesizing multilingual speech responses.
+> A Dockerized web app for transcribing speech to text and synthesizing multilingual speech responses. (Python + Flutter)
 
 ---
 
